@@ -1,0 +1,7 @@
+{
+  "name": "crud-test",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

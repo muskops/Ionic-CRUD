@@ -1,0 +1,41 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Test</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+    <!-- id -->
+    <ion-item>
+        <ion-label position="floating">Id</ion-label>
+        <ion-input type="number" [(ngModel)]="user.id"></ion-input>
+    </ion-item>
+
+    <!-- name -->
+    <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input type="text" [(ngModel)]="user.name"></ion-input>
+    </ion-item>
+
+    <!-- list users -->
+    <ion-list>
+        <ion-item *ngFor="let i of users">
+            {{i}}
+        </ion-item>
+    </ion-list>
+
+</ion-content>
+
+<ion-footer class="ion-padding">
+
+    <!-- crate new user -->
+    <ion-button expand="full" (click)="createUserNative()">create user</ion-button>
+
+    <!-- delete user -->
+    <ion-button expand="full" (click)="deleteUserNative()">delete user</ion-button>
+
+    <!-- list users -->
+    <ion-button expand="full" (click)="selectAllUsersOopExample()">select all users</ion-button>
+
+</ion-footer>
